@@ -10,6 +10,10 @@
 		FA3FCCED1BD8A361004807A1 /* NayutayaToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = FA3FCCEC1BD8A361004807A1 /* NayutayaToolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA3FCCF41BD8A361004807A1 /* NayutayaToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3FCCE91BD8A361004807A1 /* NayutayaToolbox.framework */; settings = {ASSET_TAGS = (); }; };
 		FA3FCCF91BD8A361004807A1 /* NayutayaToolboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FCCF81BD8A361004807A1 /* NayutayaToolboxTests.swift */; };
+		FA3FCD041BD8A44A004807A1 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3FCD031BD8A44A004807A1 /* Nimble.framework */; };
+		FA3FCD061BD8A44C004807A1 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3FCD051BD8A44C004807A1 /* Quick.framework */; };
+		FA3FCD081BD8A462004807A1 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA3FCD031BD8A44A004807A1 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA3FCD091BD8A466004807A1 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA3FCD051BD8A44C004807A1 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +26,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FA3FCD071BD8A456004807A1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FA3FCD091BD8A466004807A1 /* Quick.framework in CopyFiles */,
+				FA3FCD081BD8A462004807A1 /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		FA3FCCE91BD8A361004807A1 /* NayutayaToolbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NayutayaToolbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3FCCEC1BD8A361004807A1 /* NayutayaToolbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NayutayaToolbox.h; sourceTree = "<group>"; };
@@ -29,6 +47,8 @@
 		FA3FCCF31BD8A361004807A1 /* NayutayaToolboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NayutayaToolboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3FCCF81BD8A361004807A1 /* NayutayaToolboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NayutayaToolboxTests.swift; sourceTree = "<group>"; };
 		FA3FCCFA1BD8A361004807A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA3FCD031BD8A44A004807A1 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		FA3FCD051BD8A44C004807A1 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +64,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA3FCCF41BD8A361004807A1 /* NayutayaToolbox.framework in Frameworks */,
+				FA3FCD041BD8A44A004807A1 /* Nimble.framework in Frameworks */,
+				FA3FCD061BD8A44C004807A1 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +75,8 @@
 		FA3FCCDF1BD8A361004807A1 = {
 			isa = PBXGroup;
 			children = (
+				FA3FCD051BD8A44C004807A1 /* Quick.framework */,
+				FA3FCD031BD8A44A004807A1 /* Nimble.framework */,
 				FA3FCCEB1BD8A361004807A1 /* NayutayaToolbox */,
 				FA3FCCF71BD8A361004807A1 /* NayutayaToolboxTests */,
 				FA3FCCEA1BD8A361004807A1 /* Products */,
@@ -125,6 +149,7 @@
 				FA3FCCEF1BD8A361004807A1 /* Sources */,
 				FA3FCCF01BD8A361004807A1 /* Frameworks */,
 				FA3FCCF11BD8A361004807A1 /* Resources */,
+				FA3FCD071BD8A456004807A1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -339,6 +364,10 @@
 		FA3FCD011BD8A361004807A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NayutayaToolboxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nayutaya.NayutayaToolboxTests;
@@ -349,6 +378,10 @@
 		FA3FCD021BD8A361004807A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NayutayaToolboxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.nayutaya.NayutayaToolboxTests;
@@ -375,6 +408,7 @@
 				FA3FCCFF1BD8A361004807A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA3FCD001BD8A361004807A1 /* Build configuration list for PBXNativeTarget "NayutayaToolboxTests" */ = {
 			isa = XCConfigurationList;
@@ -383,6 +417,7 @@
 				FA3FCD021BD8A361004807A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

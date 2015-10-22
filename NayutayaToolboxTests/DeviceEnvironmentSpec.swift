@@ -11,5 +11,12 @@ class DeviceEnvironmentSpec : QuickSpec {
                 expect(devEnv.systemVersion).toNot(beNil())
             }
         }
+
+        describe("#hwMachine") {
+            it("") {
+                let devEnv = DeviceEnvironment.currentDevice()
+                expect(devEnv.hwMachine).toNot(beNil())
+            }
+        }
     }
 }

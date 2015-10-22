@@ -5,8 +5,10 @@ import Nimble
 
 class DeviceEnvironmentSpec : QuickSpec {
     override func spec() {
-        describe("") {
+        describe("#systemVersion") {
             it("") {
+                let devEnv = DeviceEnvironment.currentDevice()
+                expect(devEnv.systemVersion).toNot(beNil())
             }
         }
     }

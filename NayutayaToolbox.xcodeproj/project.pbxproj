@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		FA3FCCED1BD8A361004807A1 /* NayutayaToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = FA3FCCEC1BD8A361004807A1 /* NayutayaToolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA3FCCF41BD8A361004807A1 /* NayutayaToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3FCCE91BD8A361004807A1 /* NayutayaToolbox.framework */; settings = {ASSET_TAGS = (); }; };
-		FA3FCCF91BD8A361004807A1 /* NayutayaToolboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FCCF81BD8A361004807A1 /* NayutayaToolboxTests.swift */; };
 		FA3FCD041BD8A44A004807A1 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3FCD031BD8A44A004807A1 /* Nimble.framework */; };
 		FA3FCD061BD8A44C004807A1 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3FCD051BD8A44C004807A1 /* Quick.framework */; };
 		FA3FCD081BD8A462004807A1 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA3FCD031BD8A44A004807A1 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -47,7 +46,6 @@
 		FA3FCCEC1BD8A361004807A1 /* NayutayaToolbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NayutayaToolbox.h; sourceTree = "<group>"; };
 		FA3FCCEE1BD8A361004807A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA3FCCF31BD8A361004807A1 /* NayutayaToolboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NayutayaToolboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA3FCCF81BD8A361004807A1 /* NayutayaToolboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NayutayaToolboxTests.swift; sourceTree = "<group>"; };
 		FA3FCCFA1BD8A361004807A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA3FCD031BD8A44A004807A1 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		FA3FCD051BD8A44C004807A1 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 		FA3FCCF71BD8A361004807A1 /* NayutayaToolboxTests */ = {
 			isa = PBXGroup;
 			children = (
-				FA3FCCF81BD8A361004807A1 /* NayutayaToolboxTests.swift */,
 				FA3FCCFA1BD8A361004807A1 /* Info.plist */,
 				FA3FCD0C1BD8A520004807A1 /* DeviceEnvironmentSpec.swift */,
 			);
@@ -234,7 +231,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA3FCD0D1BD8A520004807A1 /* DeviceEnvironmentSpec.swift in Sources */,
-				FA3FCCF91BD8A361004807A1 /* NayutayaToolboxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

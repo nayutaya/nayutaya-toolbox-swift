@@ -5,7 +5,7 @@ xcode_scheme: NayutayaToolbox
 xcode_sdk: iphonesimulator
 before_install:
   - brew update
-  - brew upgrade xctool
+  - brew upgrade xctool || true
   - brew install carthage
   - carthage bootstrap --verbose
 # script:

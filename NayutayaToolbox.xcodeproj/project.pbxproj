@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA13B4FE1BDA1FCD00C4D827 /* TimeSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13B4FD1BDA1FCD00C4D827 /* TimeSource.swift */; };
+		FA13B5001BDA1FD900C4D827 /* TimeSourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13B4FF1BDA1FD900C4D827 /* TimeSourceSpec.swift */; };
 		FA3FCCED1BD8A361004807A1 /* NayutayaToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = FA3FCCEC1BD8A361004807A1 /* NayutayaToolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA3FCCF41BD8A361004807A1 /* NayutayaToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3FCCE91BD8A361004807A1 /* NayutayaToolbox.framework */; settings = {ASSET_TAGS = (); }; };
+		FA3FCCF41BD8A361004807A1 /* NayutayaToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3FCCE91BD8A361004807A1 /* NayutayaToolbox.framework */; };
 		FA3FCD041BD8A44A004807A1 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3FCD031BD8A44A004807A1 /* Nimble.framework */; };
 		FA3FCD061BD8A44C004807A1 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3FCD051BD8A44C004807A1 /* Quick.framework */; };
 		FA3FCD081BD8A462004807A1 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA3FCD031BD8A44A004807A1 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA3FCD091BD8A466004807A1 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA3FCD051BD8A44C004807A1 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FA3FCD0B1BD8A517004807A1 /* DeviceEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FCD0A1BD8A517004807A1 /* DeviceEnvironment.swift */; settings = {ASSET_TAGS = (); }; };
-		FA3FCD0D1BD8A520004807A1 /* DeviceEnvironmentSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FCD0C1BD8A520004807A1 /* DeviceEnvironmentSpec.swift */; settings = {ASSET_TAGS = (); }; };
+		FA3FCD0B1BD8A517004807A1 /* DeviceEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FCD0A1BD8A517004807A1 /* DeviceEnvironment.swift */; };
+		FA3FCD0D1BD8A520004807A1 /* DeviceEnvironmentSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FCD0C1BD8A520004807A1 /* DeviceEnvironmentSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA13B4FD1BDA1FCD00C4D827 /* TimeSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSource.swift; sourceTree = "<group>"; };
+		FA13B4FF1BDA1FD900C4D827 /* TimeSourceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSourceSpec.swift; sourceTree = "<group>"; };
 		FA3FCCE91BD8A361004807A1 /* NayutayaToolbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NayutayaToolbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3FCCEC1BD8A361004807A1 /* NayutayaToolbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NayutayaToolbox.h; sourceTree = "<group>"; };
 		FA3FCCEE1BD8A361004807A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 				FA3FCCEC1BD8A361004807A1 /* NayutayaToolbox.h */,
 				FA3FCCEE1BD8A361004807A1 /* Info.plist */,
 				FA3FCD0A1BD8A517004807A1 /* DeviceEnvironment.swift */,
+				FA13B4FD1BDA1FCD00C4D827 /* TimeSource.swift */,
 			);
 			path = NayutayaToolbox;
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 			children = (
 				FA3FCCFA1BD8A361004807A1 /* Info.plist */,
 				FA3FCD0C1BD8A520004807A1 /* DeviceEnvironmentSpec.swift */,
+				FA13B4FF1BDA1FD900C4D827 /* TimeSourceSpec.swift */,
 			);
 			path = NayutayaToolboxTests;
 			sourceTree = "<group>";
@@ -223,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA3FCD0B1BD8A517004807A1 /* DeviceEnvironment.swift in Sources */,
+				FA13B4FE1BDA1FCD00C4D827 /* TimeSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA3FCD0D1BD8A520004807A1 /* DeviceEnvironmentSpec.swift in Sources */,
+				FA13B5001BDA1FD900C4D827 /* TimeSourceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

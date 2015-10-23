@@ -17,10 +17,11 @@ public class UnixTimeSource : NSObject, TimeSource {
 
 /// システム起動からの時間（単位：ミリ秒）を用いる時刻源クラス。
 public class ElapsedTimeSource : NSObject, TimeSource {
+    private let processInfo = NSProcessInfo.processInfo()
+
     /// 時刻。システム起動からの時間をミリ秒単位で返す。
     public var time: Int64 {
-        let processInfo = NSProcessInfo.processInfo()
-        return Int64(processInfo.systemUptime * 1000)
+        return Int64(self.processInfo.systemUptime * 1000)
     }
 }
 

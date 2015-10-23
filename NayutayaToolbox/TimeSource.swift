@@ -31,7 +31,7 @@ public class MockTimeSource : NSObject, TimeSource {
 
     /// 指定した時刻で初期化する。
     /// - parameter time: 時刻。
-    init(_ time: Int64) {
+    public init(_ time: Int64) {
         self.time = time
     }
 }

@@ -2,7 +2,7 @@
 import Foundation
 
 /// 時刻源プロトコル。
-protocol TimeSource {
+public protocol TimeSource {
     /// 時刻。
     var time: Int64 { get }
 }
